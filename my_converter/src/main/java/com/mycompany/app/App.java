@@ -35,6 +35,11 @@ public class App {
 
     inputNumber.printInputNumber();
 
+    if ( inputNumber instanceof ConverterUtils.Lengths) {
+      ConverterUtils.Lengths lengthInput = (ConverterUtils.Lengths) inputNumber;
+      lengthInput.printLengthUnits();
+    }
+
     scannerValue.close();
     scannerUnit.close();
   }
