@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class ConverterUtils {
   public static class NewNumber {
@@ -44,6 +45,22 @@ public class ConverterUtils {
       for (int i = 0; i < LENGTH_UNITS.size(); i++){
         System.out.println(LENGTH_UNITS.get(i));
       }
+    }
+
+    public void convertLength(){
+      System.out.println("\nChoose a result unti:");
+
+      Scanner unitScanner = new Scanner(System.in);
+      String resultUnit = unitScanner.nextLine();
+
+      if (!CONVERSION_FACTORS.containsKey(this.unit) || !CONVERSION_FACTORS.containsKey(resultUnit)){
+        throw new IllegalArgumentException("Invalid unit for conversion: " + resultUnit);
+      }
+
+      BigDecimal siValue = this.value.multiply(CONVERSION_FACTORS.get(this.unit));
+      System.out.println("result: " + siValue);
+
+      unitScanner.close();
     }
 
   }
