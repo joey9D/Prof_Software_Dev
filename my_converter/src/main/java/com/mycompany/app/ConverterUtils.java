@@ -17,7 +17,7 @@ public class ConverterUtils {
       this.unit = unit;
     }
 
-    public void printInputNumber(){
+    public void printNumber(){
       System.out.println("Input: " + this.value + " " + this.unit);
     }
   }
@@ -53,12 +53,15 @@ public class ConverterUtils {
       Scanner unitScanner = new Scanner(System.in);
       String resultUnit = unitScanner.nextLine();
 
-      if (!CONVERSION_FACTORS.containsKey(this.unit) || !CONVERSION_FACTORS.containsKey(resultUnit)){
+      if (!CONVERSION_FACTORS.containsKey(this.unit) || !CONVERSION_FACTORS.containsKey(resultUnit)){ // throw exception on pre-requiered condition
         throw new IllegalArgumentException("Invalid unit for conversion: " + resultUnit);
       }
 
       BigDecimal siValue = this.value.multiply(CONVERSION_FACTORS.get(this.unit));
-      System.out.println("result: " + siValue);
+      BigDecimal resultValue = siValue.divide(CONVERSION_FACTORS.get(resultUnit));
+
+      this.value = resultValue;
+      this.unit = resultUnit;
 
       unitScanner.close();
     }

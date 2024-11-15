@@ -32,12 +32,14 @@ public class App {
 
     NewNumber inputNumber = NumberFactory.createNewNumber(value, unit);
 
-    inputNumber.printInputNumber();
+
+    inputNumber.printNumber();
 
     if ( inputNumber instanceof ConverterUtils.Lengths) {
       ConverterUtils.Lengths lengthInput = (ConverterUtils.Lengths) inputNumber;
       lengthInput.printLengthUnits();
       lengthInput.convertLength();
+      lengthInput.printNumber();
     }
 
     scannerValue.close();
