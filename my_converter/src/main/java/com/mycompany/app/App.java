@@ -3,7 +3,8 @@ package com.mycompany.app;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-import com.mycompany.app.ConverterUtils.*;
+import com.mycompany.app.ConverterUtils.NumberFactory;
+import com.mycompany.app.ConverterUtils.NewNumber;
 
 /**
  * Hello world!
@@ -17,7 +18,7 @@ public class App {
   *
   * @param args Die Befehlszeilenargumente.
   */
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println("Hello World!");
 
     System.out.println("Enter a value and a unit.");

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/Users/joey/Documents/Studium/7_Sem/Professionelle_Software_Entwicklung/project_github/Prof_Software_Dev/my_converter/src/main/java/com/mycompany/app/ConverterUtils.java">
+<error line="96" severity="error" message="Zeile ist 81 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="100" severity="error" message="Zeile ist 81 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="106" severity="error" message="Zeile ist 84 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="108" severity="error" message="Zeile ist 85 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="127" column="5" severity="error" message="Es fehlt ein Javadoc-Kommentar." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="127" column="5" severity="error" message="Klasse &apos;Lengths&apos; sieht wie zur Erweiterung entworfen aus (kann subclassed werden), aber die Methode &apos;printLengthUnits&apos; besitzt keinen Javadoc-Kommentar, der erklärt, wie Sie das sicher tun. Wenn die Klasse nicht für Erweiterungen ausgelegt ist, sollten sie die Klasse &apos;Lengths&apos; final oder die Methode &apos;printLengthUnits&apos; static/final/abstract/empty machen oder die zugelassene Annotation für die Methode hinzufügen." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="127" column="35" severity="error" message="Vor &apos;{&apos; fehlt ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="129" column="52" severity="error" message="Vor &apos;{&apos; fehlt ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="134" column="5" severity="error" message="Es fehlt ein Javadoc-Kommentar." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="134" column="5" severity="error" message="Klasse &apos;Lengths&apos; sieht wie zur Erweiterung entworfen aus (kann subclassed werden), aber die Methode &apos;convertLength&apos; besitzt keinen Javadoc-Kommentar, der erklärt, wie Sie das sicher tun. Wenn die Klasse nicht für Erweiterungen ausgelegt ist, sollten sie die Klasse &apos;Lengths&apos; final oder die Methode &apos;convertLength&apos; static/final/abstract/empty machen oder die zugelassene Annotation für die Methode hinzufügen." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="134" column="32" severity="error" message="Vor &apos;{&apos; fehlt ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="140" severity="error" message="Zeile ist 147 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="140" column="101" severity="error" message="Vor &apos;{&apos; fehlt ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="141" severity="error" message="Zeile ist 89 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="144" severity="error" message="Zeile ist 82 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="145" severity="error" message="Zeile ist 82 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="156" severity="error" message="Zeile ist 88 Zeichen lang (Obergrenze ist 80)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="156" column="5" severity="error" message="Es fehlt ein Javadoc-Kommentar." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="156" column="87" severity="error" message="Vor &apos;)&apos; befindet sich ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+<error line="156" column="88" severity="error" message="Vor &apos;{&apos; fehlt ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="/Users/joey/Documents/Studium/7_Sem/Professionelle_Software_Entwicklung/project_github/Prof_Software_Dev/my_converter/src/main/java/com/mycompany/app/App.java">
+<error line="12" column="1" severity="error" message="Hilfsklassen sollten keinen Standard-Konstruktur und keinen als public deklarierten Konstruktor haben." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="25" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="29" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="39" column="8" severity="error" message="Nach &apos;(&apos; folgt ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+</file>
+</checkstyle>
