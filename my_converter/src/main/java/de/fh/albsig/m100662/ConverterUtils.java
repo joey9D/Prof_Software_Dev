@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.nio.charset.StandardCharsets;
 
 public class ConverterUtils {
   /**
@@ -148,7 +149,7 @@ public class ConverterUtils {
     public void convertLength() {
       System.out.println("\nChoose a result unti:");
 
-      Scanner unitScanner = new Scanner(System.in);
+      Scanner unitScanner = new Scanner(System.in, StandardCharsets.UTF_8);
       String resultUnit = unitScanner.nextLine();
       // throw exception on pre-requiered condition
       if (!CONVERSION_FACTORS.containsKey(this.getUnit())

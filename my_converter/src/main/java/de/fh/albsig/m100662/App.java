@@ -1,6 +1,7 @@
 package de.fh.albsig.m100662;
 
 import java.math.BigDecimal;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 import de.fh.albsig.m100662.ConverterUtils.NumberFactory;
@@ -16,10 +17,10 @@ public class App {
   */
   public static void main(final String[] args) {
     System.out.println("Enter a value and a unit.");
-    Scanner scannerValue = new Scanner(System.in);
+    Scanner scannerValue = new Scanner(System.in, StandardCharsets.UTF_8);
     System.out.println("Value: ");
     BigDecimal value = scannerValue.nextBigDecimal();
-    Scanner scannerUnit = new Scanner(System.in);
+    Scanner scannerUnit = new Scanner(System.in, StandardCharsets.UTF_8);
     System.out.println("Unit: ");
     String unit = scannerUnit.nextLine();
 
