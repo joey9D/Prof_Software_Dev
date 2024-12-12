@@ -1,6 +1,6 @@
-com/mycompany/app/ConverterUtils$NewNumber.class
-com/mycompany/app/ConverterUtils$NumberFactory.class
-com/mycompany/app/App.class
-com/mycompany/app/package-info.class
-com/mycompany/app/ConverterUtils$Lengths.class
-com/mycompany/app/ConverterUtils.class
+de/fh/albsig/m100662/ConverterUtils$Lengths.class
+de/fh/albsig/m100662/package-info.class
+de/fh/albsig/m100662/ConverterUtils$NumberFactory.class
+de/fh/albsig/m100662/App.class
+de/fh/albsig/m100662/ConverterUtils$NewNumber.class
+de/fh/albsig/m100662/ConverterUtils.class
