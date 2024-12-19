@@ -4,38 +4,63 @@ import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import de.fh.albsig.m100662.ConverterUtils.NumberFactory;
 import de.fh.albsig.m100662.ConverterUtils.NewNumber;
 
+
+/**
+ * Hauptklasse fuer den Converter.
+ * Diese Klasse ermoeglichtt die Eingabe von Zahlenwerten und Einheiten,
+ * um diese in eine weiter/andere Einheit umrechnen zu lassen.
+ * 
+ */
 public class Main {
+  private static final Logger logger = LogManager.getLogger(Main.class);
   /**
-  * Die Hauptmethode, die als Einstiegspunkt für die Anwendung dient.
-  * Sie gibt "Hello World!" auf der Konsole aus und führt eine einfache
-  * Addition von zwei Zahlen durch.
+  * Startet das Hauptprogramm
   *
   * @param args Die Befehlszeilenargumente.
   */
   public static void main(final String[] args) {
     System.out.println("Enter a value and a unit.");
-    Scanner scannerValue = new Scanner(System.in, StandardCharsets.UTF_8);
+    Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
     System.out.println("Value: ");
-    BigDecimal value = scannerValue.nextBigDecimal();
-    Scanner scannerUnit = new Scanner(System.in, StandardCharsets.UTF_8);
-    System.out.println("Unit: ");
-    String unit = scannerUnit.nextLine();
+    BigDecimal value = null;//scannerValue.nextBigDecimal();
+    try{
+      if (scanner.hasNextBigDecimal()) {
+        value = scanner.nextBigDecimal();
+        scanner.nextLine();
+        logger.info("Value has been given: " + value + "\n");
+      } else {
+        logger.warn("No value has been given. Restart and enter a value.");
+        return;
+      }
+    } catch (Exception e) {
+      logger.error("An error occurred while reading the value:" + e.getMessage());
+      return;
+    }
 
+    //Scanner scannerUnit = new Scanner(System.in, StandardCharsets.UTF_8);
+    System.out.println("Unit: ");
+    String unit = scanner.nextLine();
+    logger.info("Unit has been given: " + unit + "\n");
+    logger.info("Creating new number: " + value + " " + unit + "\n");
     NewNumber inputNumber = NumberFactory.createNewNumber(value, unit);
 
     inputNumber.printNumber();
 
     if (inputNumber instanceof ConverterUtils.Lengths) {
+      logger.info("inputNumber is an instance of ConverterUtils.Lengths.");
       ConverterUtils.Lengths lengthInput = (ConverterUtils.Lengths) inputNumber;
       lengthInput.printLengthUnits();
       lengthInput.convertLength();
       lengthInput.printNumber();
     }
 
-    scannerValue.close();
-    scannerUnit.close();
+    //scannerValue.close();
+    scanner.close();
   }
 }
