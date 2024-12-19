@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="10.20.2">
+<checkstyle version="10.21.0">
 <file name="/Users/joey/Documents/Studium/7_Sem/Professionelle_Software_Entwicklung/project_github/Prof_Software_Dev/my_converter/src/main/java/de/fh/albsig/m100662/ConverterUtils.java">
 <error line="5" column="1" severity="warning" message="Falsche lexikographische Reihenfolge des Imports von &apos;java.util.Arrays&apos;. Sollte vor &apos;java.util.List&apos; stehen." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="6" column="1" severity="warning" message="Falsche lexikographische Reihenfolge des Imports von &apos;java.util.HashMap&apos;. Sollte vor &apos;java.util.List&apos; stehen." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>

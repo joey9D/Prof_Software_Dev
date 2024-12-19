@@ -76,7 +76,7 @@ public class ConverterUtils {
     /**
      * An ArrayList which contains length unit strings.
      */
-    public static final List<String> LENGTH_UNITS = Arrays.asList(
+    static final List<String> LENGTH_UNITS = Arrays.asList(
       "km", "m", "dm", "cm", "mm", "miles"
     );
     /**
@@ -113,7 +113,7 @@ public class ConverterUtils {
      * Map that connects the length units with their
      * corresponding conversionvalues.
      */
-    public static final Map<String, BigDecimal>
+    static final Map<String, BigDecimal>
       CONVERSION_FACTORS = new HashMap<>();
     static {
       CONVERSION_FACTORS.put("m", METER_FACTOR);

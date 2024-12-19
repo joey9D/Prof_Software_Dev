@@ -19,20 +19,17 @@ public class ConverterUtilsTest {
   private PrintStream originalOut;
 
   @BeforeAll
-  void setUpClass() {
-      // Aktionen, die vor allen Tests ausgeführt werden müssen
+  static void setUpClass() {
       System.out.println("Initialisiere Tests...");
   }
 
   @AfterAll
-  void tearDownClass() {
-      // Aktionen, die nach allen Tests ausgeführt werden müssen
+  static void tearDownClass() {
       System.out.println("Beende Tests...");
   }
 
   @BeforeEach
   void setUp() {
-  // Vorbereitung, die vor jedem Test erfolgen muss
   outputStream = new ByteArrayOutputStream();
   originalOut = System.out;
   System.setOut(new PrintStream(outputStream));
