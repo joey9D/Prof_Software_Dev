@@ -77,7 +77,7 @@ public class ConverterUtils {
      * An ArrayList which contains length unit strings.
      */
     static final List<String> LENGTH_UNITS = Arrays.asList(
-      "km", "m", "dm", "cm", "mm", "miles"
+      "km", "m", "dm", "cm", "mm", //"miles"
     );
     /**
      * Conversionfactor for meters.
@@ -121,7 +121,7 @@ public class ConverterUtils {
       CONVERSION_FACTORS.put("cm", CENTIMETER_FACTOR);
       CONVERSION_FACTORS.put("mm", MILLIMETER_FACTOR);
       CONVERSION_FACTORS.put("km", KILOMETER_FACTOR);
-      CONVERSION_FACTORS.put("miles", MILE_FACTOR);
+      //CONVERSION_FACTORS.put("miles", MILE_FACTOR);
     }
 
     /**
