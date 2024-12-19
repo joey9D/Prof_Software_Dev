@@ -7,7 +7,7 @@ import java.util.Scanner;
 import de.fh.albsig.m100662.ConverterUtils.NumberFactory;
 import de.fh.albsig.m100662.ConverterUtils.NewNumber;
 
-public class App {
+public class Main {
   /**
   * Die Hauptmethode, die als Einstiegspunkt für die Anwendung dient.
   * Sie gibt "Hello World!" auf der Konsole aus und führt eine einfache

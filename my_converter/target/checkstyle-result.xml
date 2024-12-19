@@ -40,7 +40,7 @@
 <error line="181" severity="warning" message="@-Klausel sollte eine nicht-leere Beschreibung haben." source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
 <error line="185" column="7" severity="warning" message="&apos;final&apos; hat eine unerwartete Einrückungstiefe von 6 (erwartet: 8)." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="/Users/joey/Documents/Studium/7_Sem/Professionelle_Software_Entwicklung/project_github/Prof_Software_Dev/my_converter/src/main/java/de/fh/albsig/m100662/App.java">
+<file name="/Users/joey/Documents/Studium/7_Sem/Professionelle_Software_Entwicklung/project_github/Prof_Software_Dev/my_converter/src/main/java/de/fh/albsig/m100662/Main.java">
 <error line="7" column="1" severity="warning" message="Falsche lexikographische Reihenfolge des Imports von &apos;de.fh.albsig.m100662.ConverterUtils.NumberFactory&apos;. Sollte vor &apos;java.util.Scanner&apos; stehen." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="7" column="1" severity="warning" message="Zusätzliche Trennung in der Importgruppe vor &apos;de.fh.albsig.m100662.ConverterUtils.NumberFactory&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="8" column="1" severity="warning" message="Falsche lexikographische Reihenfolge des Imports von &apos;de.fh.albsig.m100662.ConverterUtils.NewNumber&apos;. Sollte vor &apos;java.util.Scanner&apos; stehen." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>

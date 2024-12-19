@@ -37,7 +37,6 @@ public class ConverterUtilsTest {
   
   @AfterEach
   void tearDown() {
-      // Aufräumarbeiten, die nach jedem Test erfolgen müssen
       System.setOut(originalOut);
   }
 
