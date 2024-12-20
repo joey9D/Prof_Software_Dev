@@ -1,16 +1,13 @@
 package de.fh.albsig.m100662;
 
+import de.fh.albsig.m100662.ConverterUtils.Lengths;
+import de.fh.albsig.m100662.ConverterUtils.NewNumber;
+import de.fh.albsig.m100662.ConverterUtils.NumberFactory;
 import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import de.fh.albsig.m100662.ConverterUtils.NumberFactory;
-import de.fh.albsig.m100662.ConverterUtils.Lengths;
-import de.fh.albsig.m100662.ConverterUtils.NewNumber;
-
 
 /**
  * Hauptklasse fuer den Converter.
@@ -19,8 +16,9 @@ import de.fh.albsig.m100662.ConverterUtils.NewNumber;
  */
 public class Main {
   private static final Logger logger = LogManager.getLogger(Main.class);
+  
   /**
-  * Startet das Hauptprogramm
+  * Startet das Hauptprogramm.
   *
   * @param args Die Befehlszeilenargumente.
   */
@@ -29,7 +27,7 @@ public class Main {
     Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
     System.out.println("Value: ");
     BigDecimal value = null;
-    try{
+    try {
       if (scanner.hasNextBigDecimal()) {
         value = scanner.nextBigDecimal();
         scanner.nextLine();
@@ -48,7 +46,7 @@ public class Main {
     logger.info("Unit has been given: " + unit + "\n");
     logger.info("Creating new number: " + value + " " + unit + "\n");
 
-    try{
+    try {
       if (scanner.hasNext()) {
         unit = scanner.nextLine().trim();
         if (Lengths.LENGTH_UNITS.contains(unit)) {
