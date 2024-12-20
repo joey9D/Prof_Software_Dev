@@ -2,6 +2,8 @@ package de.fh.albsig.m100662;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -17,15 +19,18 @@ public class ConverterUtilsTest {
 
   private ByteArrayOutputStream outputStream;
   private PrintStream originalOut;
+  private static final Logger logger = LogManager.getLogger(ConverterUtilsTest.class);
 
   @BeforeAll
   static void setUpClass() {
-      System.out.println("Initialisiere Tests...");
+    //System.out.println("Initialisiere Tests...");
+    logger.info("Initialize tests ...");
   }
 
   @AfterAll
   static void tearDownClass() {
-      System.out.println("Beende Tests...");
+    //System.out.println("Beende Tests...");
+    logger.info("Finished tests.");
   }
 
   @BeforeEach
